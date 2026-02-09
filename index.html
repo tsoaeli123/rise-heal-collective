@@ -3,47 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rise & Heal Collective | Mental Health Support & Trauma Healing Community</title>
-    <meta name="description" content="A compassionate community movement dedicated to mental health awareness, trauma healing, and connection to professional support.">
-    <meta name="keywords" content="mental health, trauma healing, support group, therapy, counseling, wellness, emotional support, healing community, Lesotho">
+    <title>Rise & Heal Collective | Mental Health Support & Trauma Healing | Lesotho</title>
+    <meta name="description" content="Professional mental health support, trauma healing, counseling services in Lesotho. Compassionate community for healing & professional referrals.">
+    <meta name="keywords" content="mental health Lesotho, trauma healing, counseling services, therapy Lesotho, support group, healing community">
     <meta name="author" content="Rise & Heal Collective">
     
-    <!-- Open Graph / Social Media Meta Tags -->
+    <!-- Open Graph Tags -->
     <meta property="og:title" content="Rise & Heal Collective | Healing Together">
-    <meta property="og:description" content="A compassionate community movement dedicated to mental health awareness, trauma healing, and connection to professional support.">
+    <meta property="og:description" content="Professional mental health support & trauma healing in Lesotho">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.facebook.com/share/16qDUoro7C/">
     
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Font Awesome Icons -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌱</text></svg>">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💜</text></svg>">
     
     <style>
-        /* CSS Variables for easy theming */
+        /* ===== CSS RESET & VARIABLES ===== */
         :root {
-            --primary: #5D4EFF;
-            --primary-dark: #4A3CE6;
-            --primary-light: #7B6FFF;
-            --secondary: #FF6B8B;
-            --accent: #FFD166;
+            --primary: #6366F1;
+            --primary-dark: #4F46E5;
+            --primary-light: #818CF8;
+            --secondary: #EC4899;
+            --accent: #F59E0B;
+            --accent-light: #FBBF24;
             --light: #FFFFFF;
-            --light-bg: #F8F9FF;
-            --dark: #2D2B55;
-            --gray: #F0F2FF;
-            --gray-dark: #E4E7FF;
-            --shadow: 0 5px 20px rgba(93, 78, 255, 0.1);
-            --shadow-hover: 0 10px 30px rgba(93, 78, 255, 0.2);
-            --transition: all 0.3s ease;
-            --border-radius: 16px;
-            --border-radius-sm: 10px;
+            --light-bg: #F8FAFC;
+            --dark: #1E293B;
+            --dark-light: #475569;
+            --gray: #F1F5F9;
+            --gray-dark: #E2E8F0;
+            
+            /* Professional Shadows */
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            --shadow-xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            
+            /* Transitions */
+            --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+            
+            /* Border Radius */
+            --radius-sm: 8px;
+            --radius: 12px;
+            --radius-md: 16px;
+            --radius-lg: 20px;
+            --radius-xl: 28px;
+            --radius-full: 9999px;
         }
         
-        /* BASE STYLES */
         * {
             margin: 0;
             padding: 0;
@@ -52,69 +68,90 @@
         
         html {
             scroll-behavior: smooth;
-            scroll-padding-top: 100px;
+            scroll-padding-top: 80px;
+            font-size: 16px;
         }
         
         body {
-            font-family: 'Poppins', sans-serif;
-            background: var(--light-bg);
+            font-family: 'Inter', sans-serif;
+            background-color: var(--light-bg);
             color: var(--dark);
-            line-height: 1.7;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
             overflow-x: hidden;
         }
         
-        h1, h2, h3, h4, h5 {
-            font-family: 'Montserrat', sans-serif;
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            line-height: 1.2;
             color: var(--dark);
-            font-weight: 700;
-            line-height: 1.3;
         }
         
         a {
             text-decoration: none;
             color: inherit;
-            transition: var(--transition);
+            transition: var(--transition-fast);
         }
         
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        /* ===== LAYOUT & CONTAINERS ===== */
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 24px;
         }
         
         section {
-            padding: 80px 0;
+            padding: 100px 0;
+            position: relative;
         }
         
         .section-title {
             text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 60px;
+            font-size: 2.75rem;
+            margin-bottom: 64px;
             position: relative;
-            color: var(--primary);
+            color: var(--dark);
         }
         
         .section-title::after {
             content: '';
             position: absolute;
-            bottom: -15px;
+            bottom: -16px;
             left: 50%;
             transform: translateX(-50%);
-            width: 100px;
+            width: 80px;
             height: 4px;
             background: linear-gradient(to right, var(--primary), var(--secondary));
             border-radius: 2px;
         }
         
-        /* HEADER & NAVIGATION */
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.125rem;
+            color: var(--dark-light);
+            max-width: 680px;
+            margin: 0 auto 60px;
+            line-height: 1.7;
+        }
+        
+        /* ===== HEADER & NAVIGATION ===== */
         header {
-            background: var(--light);
-            padding: 15px 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(99, 102, 241, 0.1);
+            padding: 18px 0;
             position: fixed;
             top: 0;
             width: 100%;
             z-index: 1000;
-            box-shadow: var(--shadow);
+            box-shadow: var(--shadow-sm);
             transition: var(--transition);
         }
         
@@ -122,249 +159,470 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            gap: 32px;
         }
         
-        .logo-container {
+        /* Logo - Professional Design */
+        .logo {
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 16px;
+            flex-shrink: 0;
         }
         
         .logo-icon {
-            width: 50px;
-            height: 50px;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            border-radius: 12px;
+            width: 52px;
+            height: 52px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: var(--radius);
             display: flex;
             align-items: center;
             justify-content: center;
             color: var(--light);
-            font-size: 1.5rem;
             font-weight: 700;
-        }
-        
-        .logo-text h1 {
-            font-size: 1.8rem;
-            color: var(--primary);
-            margin-bottom: 5px;
-        }
-        
-        .logo-text p {
-            font-size: 0.8rem;
-            color: var(--dark);
-            opacity: 0.7;
-        }
-        
-        nav {
-            display: flex;
-            align-items: center;
-        }
-        
-        .nav-links {
-            display: flex;
-            gap: 30px;
-        }
-        
-        .nav-links a {
-            font-weight: 600;
-            font-size: 1rem;
-            position: relative;
-            padding: 5px 0;
-            color: var(--dark);
-        }
-        
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--primary);
+            font-size: 1.4rem;
+            box-shadow: var(--shadow);
             transition: var(--transition);
         }
         
-        .nav-links a:hover::after {
-            width: 100%;
+        .logo:hover .logo-icon {
+            transform: rotate(-5deg) scale(1.05);
+            box-shadow: var(--shadow-md);
         }
         
-        .nav-links a:hover {
-            color: var(--primary);
-        }
-        
-        .mobile-menu-btn {
-            display: none;
-            background: none;
-            border: none;
-            color: var(--primary);
+        .logo-text h1 {
             font-size: 1.5rem;
-            cursor: pointer;
+            font-weight: 700;
+            color: var(--dark);
+            line-height: 1.2;
+            margin-bottom: 4px;
         }
         
-        /* HERO SECTION */
+        .logo-text p {
+            font-size: 0.75rem;
+            color: var(--dark-light);
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+        
+        /* Main Navigation - Professional & Aligned */
+        .main-nav {
+            display: flex;
+            align-items: center;
+            flex: 1;
+            justify-content: flex-end;
+            gap: 8px;
+        }
+        
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            list-style: none;
+        }
+        
+        .nav-item {
+            position: relative;
+        }
+        
+        .nav-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 10px 16px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--dark-light);
+            border-radius: var(--radius);
+            transition: var(--transition-fast);
+            position: relative;
+        }
+        
+        .nav-link:hover {
+            color: var(--primary);
+            background: rgba(99, 102, 241, 0.05);
+        }
+        
+        .nav-link.active {
+            color: var(--primary);
+            background: rgba(99, 102, 241, 0.08);
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            border-radius: 1px;
+            transition: var(--transition-fast);
+            transform: translateX(-50%);
+        }
+        
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 60%;
+        }
+        
+        /* Mobile Menu Toggle - Hidden on Desktop */
+        .mobile-toggle {
+            display: none;
+            width: 48px;
+            height: 48px;
+            background: var(--primary);
+            color: var(--light);
+            border: none;
+            border-radius: var(--radius);
+            font-size: 1.25rem;
+            cursor: pointer;
+            transition: var(--transition);
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .mobile-toggle:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+        
+        /* ===== HERO SECTION ===== */
         .hero {
-            background: linear-gradient(135deg, rgba(93, 78, 255, 0.95), rgba(255, 107, 139, 0.9)), url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');
+            background: linear-gradient(135deg, 
+                rgba(99, 102, 241, 0.95) 0%, 
+                rgba(79, 70, 229, 0.92) 100%),
+                url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
             background-size: cover;
             background-position: center;
+            background-attachment: fixed;
             color: var(--light);
-            padding: 180px 0 100px;
-            text-align: center;
+            padding: 180px 0 120px;
             position: relative;
             overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 50%, 
+                rgba(236, 72, 153, 0.15) 0%, 
+                transparent 50%);
         }
         
         .hero-content {
             max-width: 800px;
             margin: 0 auto;
+            text-align: center;
             position: relative;
             z-index: 1;
         }
         
-        .hero h2 {
-            font-size: 3.2rem;
-            margin-bottom: 25px;
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
             color: var(--light);
-            text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            padding: 10px 24px;
+            border-radius: var(--radius-full);
+            font-size: 0.875rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            margin-bottom: 32px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 24px;
+            color: var(--light);
+            line-height: 1.1;
         }
         
         .hero p {
-            font-size: 1.3rem;
-            margin-bottom: 40px;
+            font-size: 1.25rem;
             opacity: 0.95;
-            max-width: 700px;
+            margin-bottom: 48px;
+            max-width: 680px;
             margin-left: auto;
             margin-right: auto;
         }
         
-        .cta-btn {
-            display: inline-block;
+        .hero-actions {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        /* ===== BUTTONS ===== */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 16px 32px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: var(--radius);
+            border: 2px solid transparent;
+            cursor: pointer;
+            transition: var(--transition);
+            text-align: center;
+            line-height: 1;
+        }
+        
+        .btn-primary {
             background: var(--accent);
             color: var(--dark);
-            padding: 18px 40px;
-            border-radius: 50px;
-            font-weight: 700;
-            font-size: 1.1rem;
-            box-shadow: 0 5px 20px rgba(255, 209, 102, 0.3);
-            transition: var(--transition);
-            border: 2px solid var(--accent);
+            box-shadow: var(--shadow-md);
         }
         
-        .cta-btn:hover {
+        .btn-primary:hover {
+            background: var(--accent-light);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .btn-secondary {
             background: transparent;
-            color: var(--accent);
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(255, 209, 102, 0.4);
+            color: var(--light);
+            border-color: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
         }
         
-        /* CARDS */
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--light);
+            transform: translateY(-2px);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            color: var(--primary);
+            border-color: var(--primary);
+        }
+        
+        .btn-outline:hover {
+            background: var(--primary);
+            color: var(--light);
+            transform: translateY(-2px);
+        }
+        
+        /* ===== CARDS ===== */
         .card {
             background: var(--light);
+            border-radius: var(--radius-md);
             padding: 40px;
-            border-radius: var(--border-radius);
             box-shadow: var(--shadow);
-            margin-bottom: 30px;
+            border: 1px solid var(--gray-dark);
             transition: var(--transition);
-            border-top: 5px solid var(--primary);
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
         }
         
         .card:hover {
-            transform: translateY(-10px);
-            box-shadow: var(--shadow-hover);
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .card-icon {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--light);
+            font-size: 1.75rem;
+            margin-bottom: 24px;
         }
         
         .card h3 {
-            margin-bottom: 20px;
             font-size: 1.5rem;
-            color: var(--primary);
+            margin-bottom: 16px;
+            color: var(--dark);
         }
         
-        .button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 14px 32px;
-            background: var(--primary);
-            color: var(--light);
-            border-radius: 50px;
+        /* ===== GRID SYSTEMS ===== */
+        .grid {
+            display: grid;
+            gap: 32px;
+        }
+        
+        .grid-2 {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+        .grid-3 {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        
+        .grid-4 {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        
+        /* ===== FOUNDER SECTION ===== */
+        .founder-section {
+            background: linear-gradient(to bottom, var(--light), var(--light-bg));
+        }
+        
+        .founder-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+            align-items: center;
+        }
+        
+        .founder-image {
+            position: relative;
+        }
+        
+        .founder-img {
+            width: 100%;
+            height: 480px;
+            background: linear-gradient(135deg, var(--primary-light), var(--secondary));
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+        }
+        
+        .founder-quote {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 24px;
+            border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+            border-top: 1px solid var(--gray-dark);
+        }
+        
+        .founder-quote p {
+            font-style: italic;
+            color: var(--dark);
+            margin-bottom: 8px;
+        }
+        
+        .founder-quote .author {
             font-weight: 600;
-            transition: var(--transition);
-            border: 2px solid var(--primary);
-        }
-        
-        .button:hover {
-            background: transparent;
             color: var(--primary);
-            transform: translateY(-3px);
         }
         
-        /* VALUES SECTION */
+        .mission-box {
+            background: rgba(245, 158, 11, 0.05);
+            border-left: 4px solid var(--accent);
+            padding: 32px;
+            border-radius: var(--radius);
+            margin-top: 40px;
+        }
+        
+        .mission-box h3 {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+            color: var(--dark);
+        }
+        
+        /* ===== VALUES SECTION ===== */
         .values-section {
-            background: var(--gray);
+            background: var(--light);
         }
         
         .values-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+            margin-top: 48px;
         }
         
         .value-card {
-            background: var(--light);
-            padding: 30px;
-            border-radius: var(--border-radius);
-            box-shadow: var(--shadow);
-            transition: var(--transition);
             text-align: center;
-            border-left: 4px solid var(--primary);
+            padding: 40px 32px;
+            background: var(--light-bg);
+            border-radius: var(--radius-md);
+            border: 1px solid var(--gray-dark);
+            transition: var(--transition);
         }
         
         .value-card:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--shadow-hover);
+            border-color: var(--primary);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
         }
         
         .value-icon {
-            font-size: 2.5rem;
-            color: var(--primary);
-            margin-bottom: 20px;
+            width: 72px;
+            height: 72px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--light);
+            font-size: 2rem;
+            margin: 0 auto 24px;
+            transition: var(--transition);
         }
         
-        .value-card h3 {
-            margin-bottom: 15px;
-            color: var(--primary);
+        .value-card:hover .value-icon {
+            transform: rotate(10deg) scale(1.1);
         }
         
-        /* SERVICES SECTION */
+        /* ===== SERVICES SECTION ===== */
+        .services-section {
+            background: var(--light-bg);
+        }
+        
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 25px;
-            margin-top: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+            margin-top: 48px;
         }
         
         .service-item {
             background: var(--light);
-            padding: 30px;
-            border-radius: var(--border-radius-sm);
-            box-shadow: var(--shadow);
-            transition: var(--transition);
+            padding: 32px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--gray-dark);
             position: relative;
-            padding-left: 70px;
-            border-left: 4px solid var(--secondary);
+            padding-left: 72px;
+            transition: var(--transition);
         }
         
         .service-item:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-hover);
+            border-color: var(--primary);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
         }
         
         .service-item::before {
-            content: '✓';
+            content: '';
             position: absolute;
-            left: 25px;
-            top: 30px;
-            width: 35px;
-            height: 35px;
+            left: 32px;
+            top: 32px;
+            width: 32px;
+            height: 32px;
             background: var(--secondary);
             color: var(--light);
             border-radius: 50%;
@@ -372,381 +630,226 @@
             align-items: center;
             justify-content: center;
             font-weight: bold;
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
         
-        /* FOUNDER SECTION */
-        .founder-section {
-            background: linear-gradient(to right, var(--light), var(--gray));
-        }
+        .service-item:nth-child(1)::before { content: '1'; }
+        .service-item:nth-child(2)::before { content: '2'; }
+        .service-item:nth-child(3)::before { content: '3'; }
+        .service-item:nth-child(4)::before { content: '4'; }
+        .service-item:nth-child(5)::before { content: '5'; }
+        .service-item:nth-child(6)::before { content: '6'; }
         
-        .founder-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-            align-items: center;
-        }
-        
-        .founder-image {
-            border-radius: var(--border-radius);
-            overflow: hidden;
-            box-shadow: var(--shadow-hover);
-        }
-        
-        .founder-image-placeholder {
-            width: 100%;
-            height: 400px;
-            background: linear-gradient(135deg, var(--primary-light), var(--secondary));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--light);
-            font-size: 5rem;
-        }
-        
-        .founder-content h2 {
-            margin-bottom: 20px;
-            color: var(--primary);
-        }
-        
-        .mission-box {
-            background: var(--light);
-            padding: 30px;
-            border-radius: var(--border-radius-sm);
-            margin-top: 30px;
-            border-left: 5px solid var(--accent);
-            box-shadow: var(--shadow);
-        }
-        
-        .mission-box h3 {
-            color: var(--primary);
-            margin-bottom: 15px;
-        }
-        
-        /* TESTIMONIALS */
+        /* ===== TESTIMONIALS ===== */
         .testimonials-section {
-            background: var(--light-bg);
+            background: linear-gradient(135deg, var(--light), var(--light-bg));
         }
         
         .testimonial-slider {
             max-width: 800px;
             margin: 0 auto;
             position: relative;
-            overflow: hidden;
         }
         
         .testimonial {
             background: var(--light);
-            padding: 40px;
-            border-radius: var(--border-radius);
-            box-shadow: var(--shadow);
+            padding: 48px;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
             text-align: center;
             display: none;
         }
         
         .testimonial.active {
             display: block;
-            animation: fadeIn 0.8s ease;
+            animation: fadeSlide 0.6s ease;
         }
         
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+        @keyframes fadeSlide {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
         
         .testimonial-text {
-            font-style: italic;
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            position: relative;
+            font-size: 1.25rem;
+            line-height: 1.8;
             color: var(--dark);
-        }
-        
-        .testimonial-text::before, .testimonial-text::after {
-            content: '"';
-            color: var(--primary);
-            font-size: 3rem;
-            font-family: serif;
-            position: absolute;
-            opacity: 0.3;
+            margin-bottom: 32px;
+            position: relative;
+            font-style: italic;
         }
         
         .testimonial-text::before {
+            content: '"';
+            position: absolute;
             top: -20px;
-            left: -10px;
-        }
-        
-        .testimonial-text::after {
-            bottom: -40px;
-            right: -10px;
+            left: -20px;
+            font-size: 4rem;
+            color: var(--primary);
+            opacity: 0.2;
+            font-family: 'Playfair Display', serif;
         }
         
         .testimonial-author {
-            font-weight: 700;
+            font-weight: 600;
             color: var(--primary);
-            margin-top: 10px;
-            font-size: 1.1rem;
+            font-size: 1.125rem;
+        }
+        
+        .testimonial-role {
+            color: var(--dark-light);
+            font-size: 0.875rem;
+            margin-top: 4px;
         }
         
         .testimonial-nav {
             display: flex;
             justify-content: center;
-            gap: 15px;
-            margin-top: 30px;
+            gap: 12px;
+            margin-top: 40px;
         }
         
         .testimonial-dot {
             width: 12px;
             height: 12px;
             border-radius: 50%;
-            background: var(--primary-light);
+            background: var(--gray-dark);
             cursor: pointer;
-            transition: var(--transition);
+            transition: var(--transition-fast);
+            border: 2px solid transparent;
         }
         
         .testimonial-dot.active {
             background: var(--primary);
-            transform: scale(1.3);
+            transform: scale(1.2);
+            border-color: var(--accent);
         }
         
-        /* GET INVOLVED SECTION */
+        /* ===== GET INVOLVED ===== */
         .get-involved-section {
-            background: var(--gray);
-        }
-        
-        .involved-intro {
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto 50px;
-            font-size: 1.1rem;
-        }
-        
-        .involved-options {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-        
-        .involved-card {
             background: var(--light);
-            padding: 40px 30px;
-            border-radius: var(--border-radius);
-            box-shadow: var(--shadow);
-            text-align: center;
-            transition: var(--transition);
         }
         
-        .involved-card:hover {
-            transform: translateY(-10px);
-            box-shadow: var(--shadow-hover);
+        .involved-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 48px;
         }
         
-        .involved-icon {
-            font-size: 3rem;
-            color: var(--primary);
-            margin-bottom: 20px;
-        }
-        
-        .involved-card h3 {
-            margin-bottom: 20px;
-            color: var(--primary);
-        }
-        
-        .involved-card p {
-            margin-bottom: 25px;
-            color: var(--dark);
-            opacity: 0.9;
-        }
-        
-        /* FORMS SECTION */
-        .forms-section {
+        /* ===== CONTACT SECTION ===== */
+        .contact-section {
             background: var(--light-bg);
         }
         
-        .forms-container {
+        .contact-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-        }
-        
-        .form-card {
-            background: var(--light);
-            padding: 40px;
-            border-radius: var(--border-radius);
-            box-shadow: var(--shadow);
-            text-align: center;
-            border-top: 5px solid var(--secondary);
-        }
-        
-        .form-card h3 {
-            margin-bottom: 20px;
-            color: var(--primary);
-        }
-        
-        .form-card p {
-            margin-bottom: 25px;
-            color: var(--dark);
-        }
-        
-        .form-features {
-            text-align: left;
-            margin-top: 25px;
-            padding-top: 25px;
-            border-top: 1px solid var(--gray-dark);
-        }
-        
-        .form-features li {
-            margin-bottom: 10px;
-            padding-left: 25px;
-            position: relative;
-        }
-        
-        .form-features li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: var(--secondary);
-            font-weight: bold;
-        }
-        
-        /* IMPACT SECTION */
-        .impact-section {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-            color: var(--light);
-        }
-        
-        .impact-section .section-title {
-            color: var(--light);
-        }
-        
-        .impact-section .section-title::after {
-            background: var(--accent);
-        }
-        
-        .impact-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
-        }
-        
-        .impact-card {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 30px;
-            border-radius: var(--border-radius);
-            text-align: center;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            transition: var(--transition);
-        }
-        
-        .impact-card:hover {
-            transform: translateY(-5px);
-            background: rgba(255, 255, 255, 0.15);
-        }
-        
-        .impact-number {
-            font-size: 3rem;
-            font-weight: 700;
-            color: var(--accent);
-            margin-bottom: 15px;
-        }
-        
-        .impact-card h3 {
-            color: var(--light);
-            margin-bottom: 15px;
-        }
-        
-        /* CONTACT SECTION */
-        .contact-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+            gap: 32px;
+            margin-top: 48px;
         }
         
         .contact-card {
             text-align: center;
-            padding: 40px 30px;
-            background: var(--light);
-            border-radius: var(--border-radius);
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-        }
-        
-        .contact-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-hover);
+            padding: 48px 32px;
         }
         
         .contact-icon {
-            font-size: 3rem;
-            color: var(--primary);
-            margin-bottom: 20px;
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--light);
+            font-size: 2rem;
+            margin: 0 auto 24px;
         }
         
-        /* NOTICE SECTION */
+        .contact-detail {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--dark);
+            margin: 16px 0;
+        }
+        
+        /* ===== NOTICE SECTION ===== */
         .notice-section {
-            background: #FFF8E1;
-            border-radius: var(--border-radius);
+            background: linear-gradient(135deg, #FFF8E1, #FFF3CD);
+            border-radius: var(--radius-md);
             padding: 40px;
-            margin-top: 40px;
-            border-left: 5px solid #FF9800;
+            margin-top: 64px;
+            border-left: 4px solid #F59E0B;
         }
         
         .notice-section h3 {
-            color: #E65100;
-            margin-bottom: 20px;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
+            color: #B45309;
+            margin-bottom: 20px;
         }
         
-        .notice-section h3 i {
-            color: #FF9800;
+        .crisis-box {
+            background: #FEE2E2;
+            border-radius: var(--radius);
+            padding: 24px;
+            margin-top: 24px;
         }
         
-        .crisis-resources {
-            background: #FFEBEE;
-            padding: 20px;
-            border-radius: var(--border-radius-sm);
-            margin-top: 20px;
+        .crisis-box h4 {
+            color: #DC2626;
+            margin-bottom: 12px;
         }
         
-        .crisis-resources h4 {
-            color: #D32F2F;
-            margin-bottom: 10px;
-        }
-        
-        /* FOOTER */
+        /* ===== FOOTER ===== */
         footer {
             background: var(--dark);
             color: var(--light);
-            padding: 60px 0 30px;
+            padding: 80px 0 40px;
+            position: relative;
         }
         
-        .footer-content {
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+        }
+        
+        .footer-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-            margin-bottom: 40px;
+            gap: 60px;
+            margin-bottom: 60px;
         }
         
         .footer-logo h3 {
             color: var(--light);
-            font-size: 1.8rem;
-            margin-bottom: 10px;
+            font-size: 1.75rem;
+            margin-bottom: 16px;
         }
         
         .footer-logo p {
             opacity: 0.8;
-            margin-bottom: 20px;
+            margin-bottom: 24px;
         }
         
-        .footer-links h4, .footer-contact h4 {
+        .footer-links h4,
+        .footer-contact h4 {
             color: var(--accent);
-            margin-bottom: 20px;
-            font-size: 1.2rem;
+            font-size: 1.125rem;
+            margin-bottom: 24px;
         }
         
         .footer-links ul {
@@ -754,67 +857,72 @@
         }
         
         .footer-links li {
-            margin-bottom: 10px;
+            margin-bottom: 12px;
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            transition: var(--transition-fast);
         }
         
         .footer-links a:hover {
             color: var(--accent);
-            padding-left: 5px;
+            padding-left: 8px;
         }
         
-        .social-icons {
+        .social-links {
             display: flex;
-            gap: 15px;
-            margin-top: 20px;
+            gap: 16px;
+            margin-top: 24px;
         }
         
-        .social-icon {
-            display: inline-flex;
+        .social-link {
+            width: 44px;
+            height: 44px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius);
+            display: flex;
             align-items: center;
             justify-content: center;
-            width: 40px;
-            height: 40px;
-            background: rgba(255, 255, 255, 0.1);
             color: var(--light);
-            border-radius: 50%;
+            font-size: 1.125rem;
             transition: var(--transition);
         }
         
-        .social-icon:hover {
+        .social-link:hover {
             background: var(--primary);
-            color: var(--light);
-            transform: translateY(-5px);
+            transform: translateY(-4px);
         }
         
         .copyright {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            font-size: 0.9rem;
-            opacity: 0.8;
             text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.875rem;
         }
         
-        /* BACK TO TOP BUTTON */
+        /* ===== BACK TO TOP ===== */
         .back-to-top {
             position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 50px;
-            height: 50px;
+            bottom: 32px;
+            right: 32px;
+            width: 56px;
+            height: 56px;
             background: var(--primary);
             color: var(--light);
-            border-radius: 50%;
+            border-radius: var(--radius);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.2rem;
+            font-size: 1.25rem;
             cursor: pointer;
             opacity: 0;
             visibility: hidden;
             transition: var(--transition);
-            box-shadow: var(--shadow);
+            box-shadow: var(--shadow-lg);
             z-index: 999;
+            border: none;
         }
         
         .back-to-top.visible {
@@ -824,162 +932,250 @@
         
         .back-to-top:hover {
             background: var(--primary-dark);
-            transform: translateY(-5px);
+            transform: translateY(-4px);
         }
         
-        /* RESPONSIVE DESIGN */
+        /* ===== RESPONSIVE DESIGN ===== */
+        @media (max-width: 1200px) {
+            .container {
+                padding: 0 32px;
+            }
+        }
+        
         @media (max-width: 992px) {
-            .hero h2 {
-                font-size: 2.8rem;
-            }
-            
             .section-title {
-                font-size: 2.2rem;
+                font-size: 2.5rem;
             }
             
-            .founder-container {
+            .founder-grid {
                 grid-template-columns: 1fr;
-                gap: 30px;
+                gap: 48px;
             }
             
-            .founder-image-placeholder {
-                height: 300px;
+            .founder-img {
+                height: 400px;
+            }
+            
+            .hero h1 {
+                font-size: 3rem;
+            }
+            
+            .hero p {
+                font-size: 1.125rem;
             }
         }
         
         @media (max-width: 768px) {
-            .header-container {
-                padding: 0 20px;
-            }
-            
-            .mobile-menu-btn {
-                display: block;
-            }
-            
-            .nav-links {
+            /* Mobile Navigation */
+            .main-nav {
                 position: fixed;
-                top: 80px;
-                left: 0;
-                width: 100%;
+                top: 0;
+                right: -100%;
+                width: 320px;
+                height: 100vh;
                 background: var(--light);
                 flex-direction: column;
-                align-items: center;
-                padding: 30px 0;
-                gap: 25px;
-                transform: translateY(-100%);
-                opacity: 0;
-                visibility: hidden;
+                padding: 100px 40px 40px;
                 transition: var(--transition);
+                box-shadow: var(--shadow-xl);
                 z-index: 999;
-                box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+                justify-content: flex-start;
+                align-items: flex-start;
             }
             
-            .nav-links.active {
-                transform: translateY(0);
-                opacity: 1;
-                visibility: visible;
+            .main-nav.active {
+                right: 0;
             }
             
+            .nav-menu {
+                flex-direction: column;
+                width: 100%;
+                gap: 4px;
+            }
+            
+            .nav-link {
+                width: 100%;
+                justify-content: flex-start;
+                padding: 14px 20px;
+            }
+            
+            .mobile-toggle {
+                display: flex;
+                z-index: 1000;
+            }
+            
+            /* Mobile Adjustments */
             .hero {
-                padding: 150px 0 80px;
+                padding: 160px 0 80px;
             }
             
-            .hero h2 {
-                font-size: 2.4rem;
+            .hero h1 {
+                font-size: 2.5rem;
             }
             
             .hero p {
-                font-size: 1.1rem;
+                font-size: 1rem;
+            }
+            
+            .hero-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
             }
             
             .section-title {
-                font-size: 2rem;
+                font-size: 2.25rem;
+            }
+            
+            section {
+                padding: 80px 0;
+            }
+            
+            .grid-2,
+            .grid-3,
+            .grid-4 {
+                grid-template-columns: 1fr;
             }
         }
         
         @media (max-width: 576px) {
-            .hero h2 {
+            .container {
+                padding: 0 20px;
+            }
+            
+            .hero h1 {
                 font-size: 2rem;
             }
             
             .section-title {
-                font-size: 1.8rem;
+                font-size: 2rem;
             }
             
-            .card, .value-card, .service-item {
-                padding: 25px 20px;
+            .card,
+            .value-card,
+            .service-item,
+            .involved-card,
+            .contact-card {
+                padding: 32px 24px;
             }
             
             .service-item {
                 padding-left: 60px;
             }
+            
+            .service-item::before {
+                left: 24px;
+            }
+            
+            .footer-grid {
+                gap: 40px;
+            }
         }
         
-        /* ANIMATIONS */
-        @keyframes float {
-            0% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-            100% { transform: translateY(0); }
+        /* ===== UTILITY CLASSES ===== */
+        .text-center {
+            text-align: center;
         }
         
-        .floating {
-            animation: float 5s ease-in-out infinite;
+        .text-gradient {
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
         
-        /* SEO ENHANCEMENTS */
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border: 0;
-        }
+        .mb-4 { margin-bottom: 16px; }
+        .mb-8 { margin-bottom: 32px; }
+        .mb-12 { margin-bottom: 48px; }
+        .mt-4 { margin-top: 16px; }
+        .mt-8 { margin-top: 32px; }
+        .mt-12 { margin-top: 48px; }
     </style>
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="container header-container">
-            <div class="logo-container">
-                <div class="logo-icon">
-                    R&H
-                </div>
+            <a href="#hero" class="logo">
+                <div class="logo-icon">R&H</div>
                 <div class="logo-text">
                     <h1>Rise & Heal Collective</h1>
                     <p>Mental Health & Healing Community</p>
                 </div>
-            </div>
+            </a>
             
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <button class="mobile-toggle" id="mobileToggle">
                 <i class="fas fa-bars"></i>
             </button>
             
-            <nav>
-                <div class="nav-links" id="navLinks">
-                    <a href="#hero">Home</a>
-                    <a href="#founder">Founder</a>
-                    <a href="#values">Our Values</a>
-                    <a href="#services">What We Do</a>
-                    <a href="#testimonials">Community Stories</a>
-                    <a href="#get-involved">Get Involved</a>
-                    <a href="#contact">Contact</a>
-                </div>
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#hero" class="nav-link active">
+                            <i class="fas fa-home"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#founder" class="nav-link">
+                            <i class="fas fa-user"></i>
+                            Founder
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#values" class="nav-link">
+                            <i class="fas fa-heart"></i>
+                            Values
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">
+                            <i class="fas fa-hands-helping"></i>
+                            Services
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#testimonials" class="nav-link">
+                            <i class="fas fa-comments"></i>
+                            Stories
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#get-involved" class="nav-link">
+                            <i class="fas fa-handshake"></i>
+                            Get Involved
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">
+                            <i class="fas fa-envelope"></i>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero" id="hero">
-        <div class="hero-content container">
-            <h2 class="floating">Healing Together, One Step at a Time</h2>
-            <p>A compassionate community movement dedicated to mental health awareness, trauma healing, and connection to professional support.</p>
-            <div class="hero-buttons">
-                <a href="#get-involved" class="cta-btn">Join Our Community</a>
-                <a href="#contact" class="button" style="background: transparent; color: white; border: 2px solid white; margin-left: 15px;">Contact Support</a>
+        <div class="container hero-content">
+            <span class="hero-badge">Healing Community Since 2023</span>
+            <h1>Healing Together, One Step at a Time</h1>
+            <p>A compassionate community movement dedicated to mental health awareness, trauma healing, and connection to professional support. You are not alone on this journey.</p>
+            <div class="hero-actions">
+                <a href="#get-involved" class="btn btn-primary">
+                    <i class="fas fa-hands-helping"></i>
+                    Join Our Community
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-phone-alt"></i>
+                    Contact Support
+                </a>
             </div>
         </div>
     </section>
@@ -988,19 +1184,29 @@
     <section class="founder-section" id="founder">
         <div class="container">
             <h2 class="section-title">Meet the Founder</h2>
-            <div class="founder-container">
+            <p class="section-subtitle">A journey from personal experience to compassionate leadership in mental health advocacy</p>
+            
+            <div class="founder-grid">
                 <div class="founder-image">
-                    <div class="founder-image-placeholder">
-                        <i class="fas fa-heart"></i>
+                    <div class="founder-img">
+                        <div class="founder-quote">
+                            <p>"Healing begins when we allow ourselves to be seen, heard, and supported."</p>
+                            <span class="author">— Founder, Rise & Heal Collective</span>
+                        </div>
                     </div>
                 </div>
+                
                 <div class="founder-content">
-                    <p><strong>Rise & Heal Collective</strong> was founded by a survivor and advocate who understands trauma not only through study, but through lived experience. This movement was born from a journey of standing up for what is right, navigating loss, workplace harm, and choosing healing over silence.</p>
-                    <p>The vision is simple but powerful: <em>no one should feel alone in their pain, and everyone deserves access to compassionate, ethical mental health support.</em></p>
+                    <p><strong>Rise & Heal Collective</strong> was founded by a survivor and advocate who understands trauma not only through academic study, but through lived, personal experience. This movement emerged from a courageous journey of standing up for justice, navigating significant loss, overcoming workplace harm, and ultimately choosing the path of healing over silence.</p>
+                    
+                    <p>The vision is profound yet beautifully simple: <em>no individual should ever feel isolated in their pain, and every person deserves compassionate, ethical, and accessible mental health support.</em></p>
                     
                     <div class="mission-box">
-                        <h3><i class="fas fa-bullseye"></i> Our Mission</h3>
-                        <p>Rise & Heal Collective exists to raise awareness around mental health and trauma, reduce stigma, and create safe spaces where individuals feel seen, validated, and supported. We bridge survivors with trusted mental health professionals and encourage healing through empathy and community.</p>
+                        <h3>
+                            <i class="fas fa-bullseye" style="color: var(--accent);"></i>
+                            Our Mission
+                        </h3>
+                        <p>We exist to raise awareness around mental health and trauma, reduce stigma, and create safe spaces where individuals feel seen, validated, and supported. We bridge survivors with trusted mental health professionals and encourage healing through empathy and community.</p>
                     </div>
                 </div>
             </div>
@@ -1011,74 +1217,87 @@
     <section class="values-section" id="values">
         <div class="container">
             <h2 class="section-title">What We Stand For</h2>
+            <p class="section-subtitle">Our core principles guide every interaction and initiative within our community</p>
+            
             <div class="values-grid">
                 <div class="value-card">
                     <div class="value-icon">
                         <i class="fas fa-heart"></i>
                     </div>
                     <h3>Empathy First</h3>
-                    <p>We listen without judgment and validate every experience with compassion and understanding.</p>
+                    <p>We listen without judgment and validate every experience with genuine compassion and deep understanding.</p>
                 </div>
+                
                 <div class="value-card">
                     <div class="value-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
                     <h3>Safe Spaces</h3>
-                    <p>Emotional safety and confidentiality are our top priorities in every interaction.</p>
+                    <p>Emotional safety, confidentiality, and trust form the foundation of every interaction within our community.</p>
                 </div>
+                
                 <div class="value-card">
                     <div class="value-icon">
                         <i class="fas fa-user-check"></i>
                     </div>
-                    <h3>Healing with Dignity</h3>
-                    <p>Every story matters and every person deserves respect throughout their healing journey.</p>
+                    <h3>Dignified Healing</h3>
+                    <p>Every story matters. We honor each person's journey with the utmost respect and preserve dignity throughout.</p>
                 </div>
+                
                 <div class="value-card">
                     <div class="value-icon">
                         <i class="fas fa-hands-helping"></i>
                     </div>
                     <h3>Professional Support</h3>
-                    <p>We promote ethical referrals to qualified therapists and mental health professionals.</p>
+                    <p>We promote ethical referrals to qualified therapists and mental health professionals with verified credentials.</p>
                 </div>
+                
                 <div class="value-card">
                     <div class="value-icon">
                         <i class="fas fa-users"></i>
                     </div>
                     <h3>Community Strength</h3>
-                    <p>Healing is not meant to be done alone. Together we find strength and resilience.</p>
+                    <p>Healing thrives in connection. We believe in collective resilience and the power of shared experiences.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services">
+    <section class="services-section" id="services">
         <div class="container">
             <h2 class="section-title">What We Do</h2>
+            <p class="section-subtitle">Professional support and community initiatives designed for meaningful impact and healing</p>
+            
             <div class="services-grid">
                 <div class="service-item">
                     <h3>Mental Health Campaigns</h3>
-                    <p>Awareness initiatives to reduce stigma around mental health and trauma.</p>
+                    <p>Awareness initiatives to reduce stigma around mental health and trauma through education and community engagement.</p>
                 </div>
+                
                 <div class="service-item">
-                    <h3>Peer Support</h3>
-                    <p>Safe, moderated conversations and peer-led support circles.</p>
+                    <h3>Peer Support Networks</h3>
+                    <p>Safe, moderated conversations and peer-led support circles facilitated by trained community members.</p>
                 </div>
+                
                 <div class="service-item">
                     <h3>Educational Resources</h3>
-                    <p>Trauma-informed coping tools and mental health education materials.</p>
+                    <p>Trauma-informed coping tools and mental health literacy materials for empowerment and self-care.</p>
                 </div>
+                
                 <div class="service-item">
                     <h3>Professional Referrals</h3>
-                    <p>Connection to qualified mental health professionals and therapists.</p>
+                    <p>Carefully vetted connections to licensed therapists, counselors, and mental health specialists.</p>
                 </div>
+                
                 <div class="service-item">
-                    <h3>Community Workshops</h3>
-                    <p>Healing circles, webinars, and workshops on mental wellness.</p>
+                    <h3>Healing Workshops</h3>
+                    <p>Interactive workshops, healing circles, and therapeutic group activities for collective growth.</p>
                 </div>
+                
                 <div class="service-item">
-                    <h3>Advocacy</h3>
-                    <p>Promoting mental health awareness in workplaces and communities.</p>
+                    <h3>Advocacy & Outreach</h3>
+                    <p>Promoting mental health awareness in workplaces, educational institutions, and community settings.</p>
                 </div>
             </div>
         </div>
@@ -1088,22 +1307,31 @@
     <section class="testimonials-section" id="testimonials">
         <div class="container">
             <h2 class="section-title">Community Stories</h2>
+            <p class="section-subtitle">Real experiences of healing, growth, and transformation from our community members</p>
+            
             <div class="testimonial-slider">
                 <div class="testimonial active">
-                    <p class="testimonial-text">Finding Rise & Heal Collective changed my healing journey. After years of feeling alone in my trauma, I finally found people who truly understood. The support I received gave me the courage to seek professional help and begin my healing process.</p>
-                    <p class="testimonial-author">- Tony Lesia, Community Member</p>
+                    <p class="testimonial-text">Finding Rise & Heal Collective was the turning point in my healing journey. After years of carrying trauma alone, I discovered a community that truly understood. The compassionate support gave me courage to seek professional help and begin authentic healing.</p>
+                    <p class="testimonial-author">Tony Lesia</p>
+                    <p class="testimonial-role">Community Member | 2+ Years in Healing Journey</p>
                 </div>
+                
                 <div class="testimonial">
-                    <p class="testimonial-text">As someone who struggled with workplace trauma, this community provided the safe space I needed. The peer support and professional referrals helped me regain my confidence and find the right therapist for my healing journey.</p>
-                    <p class="testimonial-author">- Tsoaeli Seotsanyane, Support Recipient</p>
+                    <p class="testimonial-text">As someone navigating workplace trauma, this community provided the emotional safety I desperately needed. The peer support and professional referrals helped me rebuild confidence and find the perfect therapist for my specific healing needs.</p>
+                    <p class="testimonial-author">Tsoaeli Seotsanyane</p>
+                    <p class="testimonial-role">Support Recipient | Professional Development</p>
                 </div>
+                
                 <div class="testimonial">
-                    <p class="testimonial-text">The workshops and healing circles helped me understand my trauma responses and gave me practical tools for coping. This community feels like a safe harbor where I can share without judgment.</p>
-                    <p class="testimonial-author">- Thuso Hlanami, Workshop Participant</p>
+                    <p class="testimonial-text">The healing circles and educational workshops provided practical tools I use daily. This community feels like a sanctuary where I can be authentic without fear of judgment—a true safe harbor in challenging times.</p>
+                    <p class="testimonial-author">Thuso Hlanami</p>
+                    <p class="testimonial-role">Workshop Participant | Mental Health Advocate</p>
                 </div>
+                
                 <div class="testimonial">
-                    <p class="testimonial-text">Rise & Heal Collective provided the bridge I needed between recognizing I needed help and actually finding the right professional support. Their compassionate approach made all the difference.</p>
-                    <p class="testimonial-author">- Kananelo Masotsa, Community Member</p>
+                    <p class="testimonial-text">Rise & Heal Collective bridged the gap between knowing I needed help and actually accessing quality support. Their ethical, compassionate approach made all the difference in my recovery journey.</p>
+                    <p class="testimonial-author">Kananelo Masotsa</p>
+                    <p class="testimonial-role">Community Member | Trauma Recovery</p>
                 </div>
                 
                 <div class="testimonial-nav">
@@ -1120,149 +1348,97 @@
     <section class="get-involved-section" id="get-involved">
         <div class="container">
             <h2 class="section-title">Get Involved</h2>
-            <p class="involved-intro">Whether you are seeking support, want to share your story, or are a mental health professional wishing to collaborate, there is space for you in this community.</p>
+            <p class="section-subtitle">Choose your path toward healing, connection, or professional collaboration in our community</p>
             
-            <div class="involved-options">
-                <div class="involved-card">
-                    <div class="involved-icon">
+            <div class="involved-grid">
+                <div class="card">
+                    <div class="card-icon">
                         <i class="fas fa-hands-helping"></i>
                     </div>
                     <h3>Seeking Support</h3>
-                    <p>Share what you are experiencing and we will guide you toward appropriate professional resources. You don't have to navigate this alone.</p>
-                    <button class="button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSc4c_H7UAyDwmZlk6NpeyOVfE0VxtiH7OkwdFWAk-7hKJ_HDQ/viewform?pli=1','_blank')">Request Support</button>
+                    <p>If you're navigating mental health challenges, trauma, or simply need guidance, we're here to connect you with appropriate professional resources and peer support.</p>
+                    <p class="mt-8"><strong>Confidential • Compassionate • Professional Referrals</strong></p>
+                    <button class="btn btn-primary mt-12" onclick="openForm('support')">
+                        <i class="fas fa-user-check"></i>
+                        Request Support
+                    </button>
                 </div>
                 
-                <div class="involved-card">
-                    <div class="involved-icon">
+                <div class="card">
+                    <div class="card-icon">
                         <i class="fas fa-user-md"></i>
                     </div>
                     <h3>Therapist Partnership</h3>
-                    <p>Join our referral network to help expand access to ethical, trauma‑informed care for those in our community.</p>
-                    <button class="button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSdY_jyuj3HkT1J1U7c5ncD-_0XpnFg143QJazbHOY61WjL0aQ/viewform?pli=1','_blank')">Partner With Us</button>
+                    <p>Licensed therapists, counselors, and mental health professionals are invited to join our referral network to expand access to ethical, trauma‑informed care.</p>
+                    <p class="mt-8"><strong>Vetted Network • Ethical Standards • Community Impact</strong></p>
+                    <button class="btn btn-outline mt-12" onclick="openForm('therapist')">
+                        <i class="fas fa-handshake"></i>
+                        Join Our Network
+                    </button>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Forms Section -->
-    <section class="forms-section" id="forms">
-        <div class="container">
-            <h2 class="section-title">Contact & Support Forms</h2>
-            <p style="text-align: center; max-width: 800px; margin: 0 auto 50px;">To protect safety and dignity, we use separate forms for different needs. All information shared is treated with care and confidentiality.</p>
-            
-            <div class="forms-container">
-                <div class="form-card">
-                    <h3><i class="fas fa-life-ring"></i> Support Request Form</h3>
-                    <p>For individuals seeking guidance and connection to professional resources.</p>
-                    <ul class="form-features">
-                        <li>Name (optional)</li>
-                        <li>Preferred contact method</li>
-                        <li>General concern (no graphic details)</li>
-                        <li>Consent to referral process</li>
-                        <li>Secure & confidential</li>
-                    </ul>
-                    <button class="button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSc4c_H7UAyDwmZlk6NpeyOVfE0VxtiH7OkwdFWAk-7hKJ_HDQ/viewform?pli=1','_blank')">Access Support Form</button>
-                </div>
-                
-                <div class="form-card">
-                    <h3><i class="fas fa-handshake"></i> Therapist Partnership Form</h3>
-                    <p>For mental health professionals interested in joining our referral network.</p>
-                    <ul class="form-features">
-                        <li>Name & qualifications</li>
-                        <li>Registration number</li>
-                        <li>Area of practice</li>
-                        <li>Contact details</li>
-                        <li>Consent to be listed in our network</li>
-                    </ul>
-                    <button class="button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSdY_jyuj3HkT1J1U7c5ncD-_0XpnFg143QJazbHOY61WjL0aQ/viewform?pli=1','_blank')">Access Partnership Form</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Impact Section -->
-    <section class="impact-section" id="impact">
-        <div class="container">
-            <h2 class="section-title">Our Impact & Credibility</h2>
-            <p style="text-align: center; max-width: 800px; margin: 0 auto 40px; opacity: 0.9;">Rise & Heal Collective is committed to measurable, ethical impact. Our work focuses on awareness, connection, and access — especially for individuals affected by trauma, family violence, and workplace harm.</p>
-            
-            <div class="impact-grid">
-                <div class="impact-card">
-                    <div class="impact-number">100+</div>
-                    <h3>Community Members</h3>
-                    <p>Individuals supported through our community initiatives</p>
-                </div>
-                <div class="impact-card">
-                    <div class="impact-number">50+</div>
-                    <h3>Professional Referrals</h3>
-                    <p>Connections made to licensed mental health professionals</p>
-                </div>
-                <div class="impact-card">
-                    <div class="impact-number">25+</div>
-                    <h3>Partner Therapists</h3>
-                    <p>Mental health professionals in our referral network</p>
-                </div>
-                <div class="impact-card">
-                    <div class="impact-number">15+</div>
-                    <h3>Awareness Campaigns</h3>
-                    <p>Community events and workshops conducted</p>
-                </div>
-            </div>
-            
-            <div style="margin-top: 50px; text-align: center;">
-                <p><i class="fas fa-shield-alt" style="margin-right: 10px;"></i> We maintain clear boundaries between peer support and clinical care, ensuring accountability, safety, and trust for all involved.</p>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section class="contact-section" id="contact">
         <div class="container">
             <h2 class="section-title">Connect With Us</h2>
-            <div class="contact-container">
-                <div class="contact-card">
+            <p class="section-subtitle">Multiple pathways to connect, communicate, and begin your healing journey with our community</p>
+            
+            <div class="contact-grid">
+                <div class="contact-card card">
                     <div class="contact-icon">
                         <i class="fab fa-whatsapp"></i>
                     </div>
-                    <h3>WhatsApp / Phone</h3>
-                    <p>+266 5387 0154</p>
-                    <a href="https://wa.me/26653870154" target="_blank" class="button">
-                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
-                    </a>
+                    <h3>WhatsApp Support</h3>
+                    <p>Direct messaging for confidential conversations and immediate guidance</p>
+                    <div class="contact-detail">+266 5387 0154</div>
+                    <button class="btn btn-primary mt-8" onclick="window.open('https://wa.me/26653870154', '_blank')">
+                        <i class="fab fa-whatsapp"></i>
+                        Message Now
+                    </button>
                 </div>
                 
-                <div class="contact-card">
+                <div class="contact-card card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Communication</h3>
+                    <p>Professional email support for detailed inquiries and partnership discussions</p>
+                    <div class="contact-detail">nthabisenglesia63@gmail.com</div>
+                    <button class="btn btn-outline mt-8" onclick="window.location.href='mailto:nthabisenglesia63@gmail.com'">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Email
+                    </button>
+                </div>
+                
+                <div class="contact-card card">
                     <div class="contact-icon">
                         <i class="fab fa-facebook"></i>
                     </div>
                     <h3>Facebook Community</h3>
-                    <p>Join our Facebook community for updates and resources</p>
-                    <a href="https://www.facebook.com/share/16qDUoro7C/" target="_blank" class="button">
-                        <i class="fab fa-facebook-f"></i> Visit Facebook
-                    </a>
-                </div>
-                
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <h3>Email Us</h3>
-                    <p>info@riseandhealcollective.org</p>
-                    <a href="mailto:info@riseandhealcollective.org" class="button">
-                        <i class="fas fa-paper-plane"></i> Send Email
-                    </a>
+                    <p>Join our growing online community for resources, updates, and connections</p>
+                    <div class="contact-detail">Rise & Heal Collective</div>
+                    <button class="btn btn-outline mt-8" onclick="window.open('https://www.facebook.com/share/16qDUoro7C/', '_blank')">
+                        <i class="fab fa-facebook-f"></i>
+                        Visit Page
+                    </button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Important Notice Section -->
+    <!-- Important Notice -->
     <section class="container">
         <div class="notice-section">
-            <h3><i class="fas fa-exclamation-circle"></i> Important Notice</h3>
-            <p><strong>Rise & Heal Collective provides peer support and awareness only.</strong> We do not offer therapy or crisis intervention. If you are in immediate danger or distress, please contact local emergency services or a licensed mental health professional.</p>
+            <h3>
+                <i class="fas fa-exclamation-circle"></i>
+                Important Professional Notice
+            </h3>
+            <p><strong>Rise & Heal Collective provides peer support, community connection, and professional referrals only.</strong> We are not a crisis intervention service or replacement for licensed medical/psychological care. If you are in immediate danger or distress, please contact local emergency services or a licensed mental health professional.</p>
             
-            <div class="crisis-resources">
+            <div class="crisis-box">
                 <h4>Crisis Resources:</h4>
                 <p>• National Suicide Prevention Lifeline: 988</p>
                 <p>• Crisis Text Line: Text HOME to 741741</p>
@@ -1274,102 +1450,101 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-grid">
                 <div class="footer-logo">
                     <h3>Rise & Heal Collective</h3>
                     <p>A compassionate community movement dedicated to mental health awareness, trauma healing, and connection to professional support.</p>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/share/16qDUoro7C/" target="_blank" class="social-icon" aria-label="Facebook">
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/16qDUoro7C/" target="_blank" class="social-link" aria-label="Facebook">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="#" class="social-icon" aria-label="Instagram">
+                        <a href="#" class="social-link" aria-label="Instagram">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="#" class="social-icon" aria-label="Twitter">
+                        <a href="#" class="social-link" aria-label="Twitter">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="https://wa.me/26653870154" target="_blank" class="social-icon" aria-label="WhatsApp">
+                        <a href="https://wa.me/26653870154" target="_blank" class="social-link" aria-label="WhatsApp">
                             <i class="fab fa-whatsapp"></i>
                         </a>
                     </div>
                 </div>
                 
                 <div class="footer-links">
-                    <h4>Quick Links</h4>
+                    <h4>Quick Navigation</h4>
                     <ul>
                         <li><a href="#hero">Home</a></li>
-                        <li><a href="#founder">Meet the Founder</a></li>
+                        <li><a href="#founder">Founder's Story</a></li>
                         <li><a href="#values">Our Values</a></li>
-                        <li><a href="#services">What We Do</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#testimonials">Community Stories</a></li>
                         <li><a href="#get-involved">Get Involved</a></li>
-                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#contact">Contact Support</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-contact">
-                    <h4>Contact Info</h4>
+                    <h4>Contact Information</h4>
                     <p><i class="fas fa-phone-alt"></i> +266 5387 0154</p>
-                    <p><i class="fas fa-envelope"></i> info@riseandhealcollective.org</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Based in Lesotho, serving globally</p>
+                    <p><i class="fas fa-envelope"></i> nthabisenglesia63@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Based in Lesotho • Serving Globally</p>
+                    <p><i class="fab fa-facebook"></i> /RiseHealCollective</p>
                 </div>
             </div>
             
             <div class="copyright">
-                <p>© 2026 Rise & Heal Collective | Healing Together</p>
-                <p style="margin-top: 10px; font-size: 0.8rem;">This website provides peer support and does not replace professional mental health care.</p>
+                <p>© 2026 Rise & Heal Collective. All rights reserved. | Healing Together, Growing Stronger</p>
+                <p style="margin-top: 16px; font-size: 0.875rem; opacity: 0.7;">This platform provides peer support and professional referrals. It does not replace licensed medical or psychological treatment.</p>
             </div>
         </div>
     </footer>
 
     <!-- Back to Top Button -->
-    <div class="back-to-top" id="backToTop">
+    <button class="back-to-top" id="backToTop">
         <i class="fas fa-chevron-up"></i>
-    </div>
+    </button>
 
     <script>
-        // Mobile Menu Toggle
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const navLinks = document.getElementById('navLinks');
+        // ===== MOBILE NAVIGATION =====
+        const mobileToggle = document.getElementById('mobileToggle');
+        const mainNav = document.getElementById('mainNav');
+        const navLinks = document.querySelectorAll('.nav-link');
         
-        mobileMenuBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            mobileMenuBtn.innerHTML = navLinks.classList.contains('active') 
+        mobileToggle.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+            mobileToggle.innerHTML = mainNav.classList.contains('active') 
                 ? '<i class="fas fa-times"></i>' 
                 : '<i class="fas fa-bars"></i>';
         });
         
-        // Close mobile menu when clicking a link
-        document.querySelectorAll('.nav-links a').forEach(link => {
+        // Close mobile menu when clicking links
+        navLinks.forEach(link => {
             link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                mainNav.classList.remove('active');
+                mobileToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                
+                // Update active state
+                navLinks.forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
             });
         });
         
-        // Testimonial Slider
+        // ===== TESTIMONIAL SLIDER =====
         const testimonials = document.querySelectorAll('.testimonial');
         const dots = document.querySelectorAll('.testimonial-dot');
         let currentSlide = 0;
         
         function showSlide(n) {
-            testimonials.forEach(testimonial => {
-                testimonial.classList.remove('active');
-            });
-            
-            dots.forEach(dot => {
-                dot.classList.remove('active');
-            });
+            testimonials.forEach(testimonial => testimonial.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
             
             testimonials[n].classList.add('active');
             dots[n].classList.add('active');
             currentSlide = n;
         }
         
-        // Add click event to dots
         dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
-                showSlide(index);
-            });
+            dot.addEventListener('click', () => showSlide(index));
         });
         
         // Auto-rotate testimonials
@@ -1378,24 +1553,18 @@
             showSlide(currentSlide);
         }
         
-        // Start auto rotation
         let slideInterval = setInterval(autoRotateTestimonials, 6000);
         
-        // Pause rotation on hover
+        // Pause on hover
         const testimonialSlider = document.querySelector('.testimonial-slider');
-        testimonialSlider.addEventListener('mouseenter', () => {
-            clearInterval(slideInterval);
-        });
+        testimonialSlider.addEventListener('mouseenter', () => clearInterval(slideInterval));
+        testimonialSlider.addEventListener('mouseleave', () => slideInterval = setInterval(autoRotateTestimonials, 6000));
         
-        testimonialSlider.addEventListener('mouseleave', () => {
-            slideInterval = setInterval(autoRotateTestimonials, 6000);
-        });
-        
-        // Back to Top Button
+        // ===== BACK TO TOP =====
         const backToTop = document.getElementById('backToTop');
         
         window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
+            if (window.scrollY > 300) {
                 backToTop.classList.add('visible');
             } else {
                 backToTop.classList.remove('visible');
@@ -1403,43 +1572,15 @@
         });
         
         backToTop.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
         
-        // Add animation on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-        
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-        
-        // Observe elements for animation
-        document.querySelectorAll('.card, .value-card, .service-item, .impact-card, .contact-card').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(20px)';
-            el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-            observer.observe(el);
-        });
-        
-        // Smooth scrolling for anchor links
+        // ===== SMOOTH SCROLLING =====
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
-                
                 const targetId = this.getAttribute('href');
                 if(targetId === '#') return;
-                
                 const targetElement = document.querySelector(targetId);
                 if(targetElement) {
                     window.scrollTo({
@@ -1450,20 +1591,41 @@
             });
         });
         
+        // ===== FORM FUNCTIONS =====
+        function openForm(type) {
+            if(type === 'support') {
+                window.open('https://docs.google.com/forms/d/e/1FAIpQLSc4c_H7UAyDwmZlk6NpeyOVfE0VxtiH7OkwdFWAk-7hKJ_HDQ/viewform?pli=1', '_blank');
+            } else if(type === 'therapist') {
+                window.open('https://docs.google.com/forms/d/e/1FAIpQLSdY_jyuj3HkT1J1U7c5ncD-_0XpnFg143QJazbHOY61WjL0aQ/viewform?pli=1', '_blank');
+            }
+        }
+        
+        // ===== INITIALIZE =====
         // Initialize first testimonial
         showSlide(0);
         
-        // Header scroll effect
+        // Add scroll effect to header
         window.addEventListener('scroll', () => {
             const header = document.querySelector('header');
-            if (window.scrollY > 100) {
-                header.style.boxShadow = '0 5px 20px rgba(0,0,0,0.1)';
-                header.style.padding = '10px 0';
-            } else {
+            if (window.scrollY > 50) {
                 header.style.boxShadow = 'var(--shadow)';
-                header.style.padding = '15px 0';
+            } else {
+                header.style.boxShadow = 'var(--shadow-sm)';
             }
         });
+        
+        // Page load animation
+        window.addEventListener('load', () => {
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 0.6s ease';
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+            }, 50);
+        });
+        
+        // Console welcome message
+        console.log('%c🌟 Welcome to Rise & Heal Collective 🌟', 'color: #6366F1; font-size: 18px; font-weight: bold;');
+        console.log('%cProfessional Mental Health Support | Lesotho', 'color: #F59E0B; font-weight: bold;');
     </script>
 </body>
 </html>
