@@ -7,13 +7,16 @@
     <meta name="description" content="Professional mental health support, trauma healing, counseling services in Lesotho. Compassionate community for healing & professional referrals.">
     <meta name="keywords" content="mental health Lesotho, trauma healing, counseling services, therapy Lesotho, support group, healing community">
     <meta name="author" content="Rise & Heal Collective">
-    <img src="logo.png" alt="Rise & Heal Collective Logo" width="200">
+    
+    <!-- Logo in Head for SEO -->
+    <link rel="icon" href="logo.png" type="image/png">
 
     <!-- Open Graph Tags -->
     <meta property="og:title" content="Rise & Heal Collective | Healing Together">
     <meta property="og:description" content="Professional mental health support & trauma healing in Lesotho">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.facebook.com/share/16qDUoro7C/">
+    <meta property="og:image" content="logo.png">
     
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -171,24 +174,10 @@
             flex-shrink: 0;
         }
         
-        .logo-icon {
-            width: 52px;
-            height: 52px;
-            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-            border-radius: var(--radius);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--light);
-            font-weight: 700;
-            font-size: 1.4rem;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-        }
-        
-        .logo:hover .logo-icon {
-            transform: rotate(-5deg) scale(1.05);
-            box-shadow: var(--shadow-md);
+        .logo-img {
+            width: 60px;
+            height: auto;
+            object-fit: contain;
         }
         
         .logo-text h1 {
@@ -361,6 +350,86 @@
             flex-wrap: wrap;
         }
         
+        /* ===== QUICK ACCESS SECTION ===== */
+        .quick-access-section {
+            background: var(--light);
+            padding: 80px 0;
+        }
+        
+        .quick-access-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+            margin-top: 32px;
+        }
+        
+        .access-card {
+            background: var(--light-bg);
+            border-radius: var(--radius-md);
+            padding: 48px 32px;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .access-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+        }
+        
+        .access-card.seeking-support {
+            border-color: var(--primary);
+            background: linear-gradient(to bottom, rgba(99, 102, 241, 0.05), transparent);
+        }
+        
+        .access-card.therapist-partner {
+            border-color: var(--accent);
+            background: linear-gradient(to bottom, rgba(245, 158, 11, 0.05), transparent);
+        }
+        
+        .access-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .access-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--light);
+            font-size: 2rem;
+            margin: 0 auto 24px;
+        }
+        
+        .access-card.therapist-partner .access-icon {
+            background: linear-gradient(135deg, var(--accent), var(--accent-light));
+        }
+        
+        .access-arrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--primary);
+            font-weight: 600;
+            margin-top: 16px;
+            font-size: 0.95rem;
+        }
+        
+        .access-card.therapist-partner .access-arrow {
+            color: var(--accent);
+        }
+        
         /* ===== BUTTONS ===== */
         .btn {
             display: inline-flex;
@@ -411,6 +480,18 @@
         
         .btn-outline:hover {
             background: var(--primary);
+            color: var(--light);
+            transform: translateY(-2px);
+        }
+        
+        .btn-accent {
+            background: transparent;
+            color: var(--accent);
+            border-color: var(--accent);
+        }
+        
+        .btn-accent:hover {
+            background: var(--accent);
             color: var(--light);
             transform: translateY(-2px);
         }
@@ -744,27 +825,48 @@
             margin-top: 48px;
         }
         
-        /* ===== CONTACT SECTION ===== */
-        .contact-section {
+        /* ===== PARTNER WITH US SECTION ===== */
+        .partner-section {
             background: var(--light-bg);
         }
         
-        .contact-grid {
+        .partner-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 32px;
             margin-top: 48px;
         }
         
-        .contact-card {
+        .partner-card {
             text-align: center;
             padding: 48px 32px;
+            background: var(--light);
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow);
+            border: 1px solid var(--gray-dark);
+            transition: var(--transition);
         }
         
-        .contact-icon {
+        .partner-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .partner-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(to right, var(--accent), var(--accent-light));
+            border-radius: 2px 2px 0 0;
+        }
+        
+        .partner-icon {
             width: 80px;
             height: 80px;
-            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            background: linear-gradient(135deg, var(--accent), var(--accent-light));
             border-radius: var(--radius-lg);
             display: flex;
             align-items: center;
@@ -774,7 +876,7 @@
             margin: 0 auto 24px;
         }
         
-        .contact-detail {
+        .partner-detail {
             font-size: 1.25rem;
             font-weight: 600;
             color: var(--dark);
@@ -1041,6 +1143,10 @@
             .grid-4 {
                 grid-template-columns: 1fr;
             }
+            
+            .quick-access-grid {
+                grid-template-columns: 1fr;
+            }
         }
         
         @media (max-width: 576px) {
@@ -1060,7 +1166,9 @@
             .value-card,
             .service-item,
             .involved-card,
-            .contact-card {
+            .contact-card,
+            .partner-card,
+            .access-card {
                 padding: 32px 24px;
             }
             
@@ -1095,6 +1203,21 @@
         .mt-4 { margin-top: 16px; }
         .mt-8 { margin-top: 32px; }
         .mt-12 { margin-top: 48px; }
+        
+        .action-guide {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--primary);
+            font-weight: 600;
+            margin-top: 12px;
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+        
+        .action-guide.accent {
+            color: var(--accent);
+        }
     </style>
 </head>
 <body>
@@ -1102,7 +1225,8 @@
     <header>
         <div class="container header-container">
             <a href="#hero" class="logo">
-                <div class="logo-icon">R&H</div>
+                <!-- Logo exactly as specified -->
+                <img src="logo.png" alt="Rise & Heal Collective Logo" width="200" class="logo-img">
                 <div class="logo-text">
                     <h1>Rise & Heal Collective</h1>
                     <p>Mental Health & Healing Community</p>
@@ -1119,6 +1243,12 @@
                         <a href="#hero" class="nav-link active">
                             <i class="fas fa-home"></i>
                             Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#quick-access" class="nav-link">
+                            <i class="fas fa-hand-point-right"></i>
+                            Quick Start
                         </a>
                     </li>
                     <li class="nav-item">
@@ -1146,15 +1276,9 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#get-involved" class="nav-link">
+                        <a href="#partner" class="nav-link">
                             <i class="fas fa-handshake"></i>
-                            Get Involved
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">
-                            <i class="fas fa-envelope"></i>
-                            Contact
+                            Partner
                         </a>
                     </li>
                 </ul>
@@ -1169,14 +1293,62 @@
             <h1>Healing Together, One Step at a Time</h1>
             <p>A compassionate community movement dedicated to mental health awareness, trauma healing, and connection to professional support. You are not alone on this journey.</p>
             <div class="hero-actions">
-                <a href="#get-involved" class="btn btn-primary">
+                <a href="#quick-access" class="btn btn-primary">
                     <i class="fas fa-hands-helping"></i>
-                    Join Our Community
+                    Start Your Healing Journey
                 </a>
-                <a href="#contact" class="btn btn-secondary">
-                    <i class="fas fa-phone-alt"></i>
-                    Contact Support
+                <a href="#partner" class="btn btn-secondary">
+                    <i class="fas fa-user-md"></i>
+                    Partner With Us
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Access Section -->
+    <section class="quick-access-section" id="quick-access">
+        <div class="container">
+            <h2 class="section-title">Start Here</h2>
+            <p class="section-subtitle">Choose your path to begin your journey with us</p>
+            
+            <div class="quick-access-grid">
+                <div class="access-card seeking-support">
+                    <div class="access-icon">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <h3>I Need Support</h3>
+                    <p>If you're seeking mental health support, guidance, or professional referrals, this is where you begin your healing journey.</p>
+                    <p class="mt-8"><strong>✓ Confidential Support</strong></p>
+                    <p><strong>✓ Professional Referrals</strong></p>
+                    <p><strong>✓ Safe & Compassionate</strong></p>
+                    <button class="btn btn-primary mt-12" onclick="openForm('support')">
+                        <i class="fas fa-arrow-circle-right"></i>
+                        Click Here to Get Support
+                    </button>
+                    <div class="action-guide">
+                        <i class="fas fa-mouse-pointer"></i>
+                        Click the button above to request support
+                    </div>
+                </div>
+                
+                <div class="access-card therapist-partner">
+                    <div class="access-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>I'm a Therapist</h3>
+                    <p>Licensed mental health professionals can join our referral network to expand access to ethical, trauma‑informed care.</p>
+                    <p class="mt-8"><strong>✓ Vetted Network</strong></p>
+                    <p><strong>✓ Ethical Standards</strong></p>
+                    <p><strong>✓ Community Impact</strong></p>
+                    <button class="btn btn-accent mt-12" onclick="openForm('therapist')">
+                        <i class="fas fa-handshake"></i>
+                        Click Here to Partner With Us
+                    </button>
+                    <div class="action-guide accent">
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                        Click to join our professional network
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -1345,86 +1517,62 @@
         </div>
     </section>
 
-    <!-- Get Involved Section -->
-    <section class="get-involved-section" id="get-involved">
+    <!-- Partner With Us Section -->
+    <section class="partner-section" id="partner">
         <div class="container">
-            <h2 class="section-title">Get Involved</h2>
-            <p class="section-subtitle">Choose your path toward healing, connection, or professional collaboration in our community</p>
+            <h2 class="section-title">Partner With Us</h2>
+            <p class="section-subtitle">Connect with our community through multiple pathways for collaboration and support</p>
             
-            <div class="involved-grid">
-                <div class="card">
-                    <div class="card-icon">
-                        <i class="fas fa-hands-helping"></i>
-                    </div>
-                    <h3>Seeking Support</h3>
-                    <p>If you're navigating mental health challenges, trauma, or simply need guidance, we're here to connect you with appropriate professional resources and peer support.</p>
-                    <p class="mt-8"><strong>Confidential • Compassionate • Professional Referrals</strong></p>
-                    <button class="btn btn-primary mt-12" onclick="openForm('support')">
-                        <i class="fas fa-user-check"></i>
-                        Request Support
-                    </button>
-                </div>
-                
-                <div class="card">
-                    <div class="card-icon">
-                        <i class="fas fa-user-md"></i>
-                    </div>
-                    <h3>Therapist Partnership</h3>
-                    <p>Licensed therapists, counselors, and mental health professionals are invited to join our referral network to expand access to ethical, trauma‑informed care.</p>
-                    <p class="mt-8"><strong>Vetted Network • Ethical Standards • Community Impact</strong></p>
-                    <button class="btn btn-outline mt-12" onclick="openForm('therapist')">
-                        <i class="fas fa-handshake"></i>
-                        Join Our Network
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact-section" id="contact">
-        <div class="container">
-            <h2 class="section-title">Connect With Us</h2>
-            <p class="section-subtitle">Multiple pathways to connect, communicate, and begin your healing journey with our community</p>
-            
-            <div class="contact-grid">
-                <div class="contact-card card">
-                    <div class="contact-icon">
+            <div class="partner-grid">
+                <div class="partner-card">
+                    <div class="partner-icon">
                         <i class="fab fa-whatsapp"></i>
                     </div>
-                    <h3>WhatsApp Support</h3>
-                    <p>Direct messaging for confidential conversations and immediate guidance</p>
-                    <div class="contact-detail">+266 5387 0154</div>
-                    <button class="btn btn-primary mt-8" onclick="window.open('https://wa.me/26653870154', '_blank')">
+                    <h3>Direct WhatsApp Support</h3>
+                    <p>Confidential conversations and immediate guidance through direct messaging</p>
+                    <div class="partner-detail">+266 5387 0154</div>
+                    <button class="btn btn-accent mt-8" onclick="window.open('https://wa.me/26653870154', '_blank')">
                         <i class="fab fa-whatsapp"></i>
-                        Message Now
+                        Message on WhatsApp
                     </button>
+                    <div class="action-guide accent mt-4">
+                        <i class="fas fa-comment-dots"></i>
+                        Click to start a conversation
+                    </div>
                 </div>
                 
-                <div class="contact-card card">
-                    <div class="contact-icon">
+                <div class="partner-card">
+                    <div class="partner-icon">
                         <i class="fas fa-envelope"></i>
                     </div>
-                    <h3>Email Communication</h3>
-                    <p>Professional email support for detailed inquiries and partnership discussions</p>
-                    <div class="contact-detail">nthabisenglesia63@gmail.com</div>
-                    <button class="btn btn-outline mt-8" onclick="window.location.href='mailto:nthabisenglesia63@gmail.com'">
+                    <h3>Email Partnership</h3>
+                    <p>Professional email communication for detailed inquiries and partnership discussions</p>
+                    <div class="partner-detail">nthabisenglesia63@gmail.com</div>
+                    <button class="btn btn-accent mt-8" onclick="window.location.href='mailto:nthabisenglesia63@gmail.com'">
                         <i class="fas fa-paper-plane"></i>
-                        Send Email
+                        Send Partnership Email
                     </button>
+                    <div class="action-guide accent mt-4">
+                        <i class="fas fa-envelope-open-text"></i>
+                        Click to send an email
+                    </div>
                 </div>
                 
-                <div class="contact-card card">
-                    <div class="contact-icon">
+                <div class="partner-card">
+                    <div class="partner-icon">
                         <i class="fab fa-facebook"></i>
                     </div>
                     <h3>Facebook Community</h3>
                     <p>Join our growing online community for resources, updates, and connections</p>
-                    <div class="contact-detail">Rise & Heal Collective</div>
-                    <button class="btn btn-outline mt-8" onclick="window.open('https://www.facebook.com/share/16qDUoro7C/', '_blank')">
+                    <div class="partner-detail">Rise & Heal Collective</div>
+                    <button class="btn btn-accent mt-8" onclick="window.open('https://www.facebook.com/share/16qDUoro7C/', '_blank')">
                         <i class="fab fa-facebook-f"></i>
-                        Visit Page
+                        Visit Our Facebook Page
                     </button>
+                    <div class="action-guide accent mt-4">
+                        <i class="fas fa-external-link-alt"></i>
+                        Click to visit our community
+                    </div>
                 </div>
             </div>
         </div>
@@ -1453,6 +1601,8 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-logo">
+                    <!-- Footer Logo exactly as specified -->
+                    <img src="logo.png" alt="Rise & Heal Collective Logo" width="200" style="margin-bottom: 20px; border-radius: var(--radius);">
                     <h3>Rise & Heal Collective</h3>
                     <p>A compassionate community movement dedicated to mental health awareness, trauma healing, and connection to professional support.</p>
                     <div class="social-links">
@@ -1475,12 +1625,12 @@
                     <h4>Quick Navigation</h4>
                     <ul>
                         <li><a href="#hero">Home</a></li>
+                        <li><a href="#quick-access">Quick Start</a></li>
                         <li><a href="#founder">Founder's Story</a></li>
                         <li><a href="#values">Our Values</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#testimonials">Community Stories</a></li>
-                        <li><a href="#get-involved">Get Involved</a></li>
-                        <li><a href="#contact">Contact Support</a></li>
+                        <li><a href="#partner">Partner With Us</a></li>
                     </ul>
                 </div>
                 
@@ -1630,4 +1780,3 @@
     </script>
 </body>
 </html>
-
